@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.hello{
+  width: 100%;
+  height: 80vh;
+}
+body{
+}
+
+@media (max-width:500px){
+  .booss img{
+    height: 300px !important;
+  }
+}
