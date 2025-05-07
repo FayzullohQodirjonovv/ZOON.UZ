@@ -17,7 +17,7 @@ export default function Wrapper() {
   return (
     <Slider
       {...settings}
-      className="w-full max-w-[1250px] m-auto mt-5 px-4"
+      className="w-full max-w-[1400px] m-auto mt-5 px-4"
     >
       <div>
         <img
