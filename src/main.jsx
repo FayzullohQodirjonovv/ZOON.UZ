@@ -8,8 +8,8 @@ import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ShopContextProvider> {/* Context providerni yuqoriga qo'ying */}
-      <RouterProvider router={router} />  {/* Routingni amalga oshirish */}
+    <ShopContextProvider>
+      <RouterProvider router={router} />  
       <Toaster position="top-right" reverseOrder={false} />
     </ShopContextProvider>
   </StrictMode>

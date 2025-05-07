@@ -19,6 +19,28 @@
     border-radius: 10px;
 
   }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Skroll uchun uzunlik */
+    opacity: 0; /* Dastlab ko'rinmas */
+    transform: translateY(50px); /* Pastga tushgan holat */
+    animation: fadeInUp 1s ease-out forwards; /* Animatsiya */
+    scroll-behavior: smooth;
+  }
+  
+  /* Animatsiya uchun keyframes */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Pastga tushgan holat */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Yuqoriga ko'tariladi */
+    }
+  }
+  
   :root {
     --white: #ffffff;
     --black: #000000;

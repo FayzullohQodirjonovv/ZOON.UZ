@@ -8,9 +8,9 @@ const Card = ({ id, title, price, oldPrice, available, img, discount }) => {
   const isLiked = state.data.some(item => item.id === id);
   const handleLike = () => {
     if (isLiked) {
-      dispatch({ type: "remove_product", id }); // Mahsulotni yoqtirilganlardan o‘chirish
+      dispatch({ type: "remove_product", id }); 
     } else {
-      dispatch({ type: "add_product", data: { id, title, price, img } }); // Mahsulotni yoqtirish
+      dispatch({ type: "add_product", data: { id, title, price, img } });
       toast.success("Like saqlandi");
     }
   };

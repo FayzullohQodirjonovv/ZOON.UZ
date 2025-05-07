@@ -14,6 +14,7 @@ const MainLayout = () => {
   return (
     <>
       <Header />
+     
       
       {isHome && (
         <>
